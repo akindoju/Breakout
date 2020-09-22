@@ -19,7 +19,19 @@
       <button id="close-btn" class="close-btn btn">Close</button>
     </div>
 
-    <canvas id="canvas" width="800" height="600"></canvas>
+    <canvas id="canvas" width="800" height="600"> </canvas>
+
+    <p class="score-container">Score: <span id="score">0</span></p>
+
+    <div class="pregame-container" id="pregame-container">
+      <p>Welcome to <span class="game-name">Breakout!</span></p>
+      <button class="replay-btn btn" id="pregame-btn">Play</button>
+    </div>
+
+    <div class="end-game-container" id="end-game-container">
+      <p class="final-score" id="final-score"></p>
+      <button class="replay-btn btn" id="replay-btn">Restart</button>
+    </div>
 
     <script src="script.js"></script>
   </body>

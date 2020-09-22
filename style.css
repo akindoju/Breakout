@@ -22,6 +22,16 @@ canvas {
   background-color: #f0f0f0;
   display: block;
   border-radius: 5px;
+  position: relative;
+}
+
+.score-container {
+  color: #0076b1;
+  z-index: 10;
+  font-size: 21px;
+  position: absolute;
+  top: 138px;
+  right: 80px;
 }
 
 .btn {
@@ -70,8 +80,66 @@ canvas {
   padding: 20px;
   transform: translateX(-400px);
   transition: transform 0.8s ease-in-out;
+  z-index: 2;
 }
 
 .rules.show {
   transform: translateX(0);
+}
+
+.end-game-container {
+  background-color: #023853;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 450px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.end-game-container.show {
+  display: flex;
+}
+
+.final-score {
+  font-size: 23px;
+  color: white;
+}
+
+.replay-btn {
+  font-size: 16px;
+  background-color: #0076b1;
+}
+
+.replay-btn:hover {
+  background-color: #03699c;
+}
+
+.pregame-container {
+  background-color: #023853;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 450px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.pregame-container.remove {
+  display: none;
+}
+
+.pregame-container p {
+  font-size: 23px;
+  color: white;
+}
+
+.game-name {
+  font-size: 30px;
 }
